@@ -2,7 +2,7 @@ package com.bridgeLabz;
 
 public class EmployeeWage {
 	
-	
+	static final int WORKING_DAYS_PER_M0NTH = 20;
 	static final int WAGE_PER_HOUR = 20;
 	static final int FULL_TIME_HOUR = 8;
 	static final int PART_TIME_HOUR = 4;
@@ -14,7 +14,8 @@ public class EmployeeWage {
 	public static void main(String[] args) {
 		
 		System.out.println("welcome to Employee Wage");
-		
+	int day = 1;
+	while(day<=WORKING_DAYS_PER_M0NTH) {
 		int dailywage = 0;
 		int empcheck = (int)Math.floor(Math.random()*10)%3;
 		
@@ -35,6 +36,8 @@ public class EmployeeWage {
 		}
 		
 		System.out.println("Daly Wage => " +dailywage);
+		day++;
+	}	
 		
 	}	
 }
