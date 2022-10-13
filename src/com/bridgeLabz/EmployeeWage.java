@@ -17,18 +17,23 @@ public class EmployeeWage {
 		
 		int dailywage = 0;
 		int empcheck = (int)Math.floor(Math.random()*10)%3;
-		if(empcheck == IS_FULL_TIME) {	
+		
+		switch (empcheck) {
+		case IS_FULL_TIME:
 			System.out.println("Employee Full Time");
 			dailywage = WAGE_PER_HOUR * FULL_TIME_HOUR;
-		}
-		else if(empcheck == IS_PART_TIME){
+			break;
+		case IS_PART_TIME:
 			System.out.println("Employee Part Time");
 			dailywage = WAGE_PER_HOUR * PART_TIME_HOUR;
-		}
-		else {
-		
+			break;
+			
+			
+		default:	
 			System.out.println("Employee is Absent");
+
 		}
+		
 		System.out.println("Daly Wage => " +dailywage);
 		
 	}	
