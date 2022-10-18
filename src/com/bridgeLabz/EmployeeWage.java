@@ -9,11 +9,7 @@ public class EmployeeWage {
 	static final int IS_FULL_TIME = 2;
 	static final int IS_PART_TIME = 1;
 
-
-
-	public static void main(String[] args) {
-		
-		System.out.println("welcome to Employee Wage");
+	public static void computeEmpWage(){
 	int day = 1;
 	int totalworkinghours = 0;
 	int tatolwage = 0;
@@ -47,5 +43,9 @@ public class EmployeeWage {
 	System.out.println("Total working hours=>" +totalworkinghours);
 		
 	}	
+public static void main(String[] args) {
+	System.out.println("welcome to Employee Wage");
+	computeEmpWage();
+}
 }
 
